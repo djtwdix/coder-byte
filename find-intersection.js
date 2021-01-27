@@ -11,7 +11,12 @@ function FindIntersection(strArr) {
     }
   }
   //join strArr with commas (defaut) to make it a string and return it
-  return strArr.join();
+  //return false if strrArr.length is 0 (no matches found)
+  if (strArr.length === 0) {
+    return false
+  } else {
+    return strArr.join();
+  }
 }
 
 // keep this function call here 
